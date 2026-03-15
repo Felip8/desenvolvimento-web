@@ -1,0 +1,28 @@
+article {
+  border: solid;
+  border-radius: 10px;
+  border-width: 0.5px;
+  background-color: white;
+  text-align: center;
+}
+
+img {
+  width: 100vh;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.introducao {
+  margin: 10px 10px;
+}
+
+figcaption {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #2c3e50;
+}

@@ -1,0 +1,146 @@
+/*Esse arquivo envolve apenas elementos fora do ARTICLE*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(subnautica.png);
+  background-attachment: fixed;
+}
+
+/* HEADER */
+
+.logo-pagina {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.perfil-config {
+  margin-right: 20px;
+}
+
+svg {
+  cursor: pointer;
+}
+
+svg:hover {
+  color: gray;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 10vh;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+/* MENU */
+
+.nav-bar {
+  display: flex;
+  gap: 20px;
+  margin-right: 40px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* LINKS */
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+/* ASIDE */
+main {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+article {
+  flex: 3;
+  max-width: 960px;
+  padding: 20px;
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+aside {
+  position: sticky; /*faz o aside seguir o scroll da tela*/
+  top: 20px;
+  flex: 1;
+  order: -1; /*negativo para deixar antes do article. Dessa forma ele vem por primeiro*/
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 50vh;
+  border: solid;
+  border-width: 0.5px;
+  border-radius: 10px;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+aside ul li a:hover {
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: white;
+  padding: 20px;
+}
+
+.informacao-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.informacao-contato svg {
+  color: black;
+}
+
+.informacao-contato svg:hover {
+  color: gray;
+}
+
+.informacao-contato a {
+  width: fit-content;
+}
+
+span {
+  text-align: center;
+}
